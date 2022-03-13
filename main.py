@@ -1,5 +1,6 @@
 # shoot the fruit game (confusing) and with more info by yara
 
+import pgzrun
 from random import randint
 from pgzero.builtins import *
 
@@ -37,11 +38,12 @@ def on_mouse_down(pos):
         place_orange()
         place_pineapple()
     else:
-        print("sorry ... not sorry !!! You missed!")
+        print("sorry ... not sorry !!! You missed the pineapple!")
         quit()
 
 
 place_apple()
 place_orange()
 place_pineapple()
+pgzrun.go()
 # end of code 11.03.22
