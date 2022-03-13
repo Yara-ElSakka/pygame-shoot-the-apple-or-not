@@ -11,6 +11,7 @@ pineapple = Actor("pineapple")
 
 def draw():
     screen.clear()
+    screen.fill("pink")
     apple.draw()
     pineapple.draw()
     orange.draw()
